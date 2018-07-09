@@ -1,15 +1,16 @@
 /*
 COLORS
 */
-$Primary: #eb2f64;
-$Primary-light: #FF3366;
-$Primary-dark: #BA265D;
+$color-primary: #ff752c;
+$color-primary-dark: #713f26;
 
-$Grey-light-1: #faf9f9;
-$Grey-light-2: #f4f2f2;
-$Grey-light-3: #f0eeee;
-$Grey-light-4: #ccc;
+$color-black: #3a3a3a;
+$color-black-dark: #1d1d1d;
 
-$Grey-dark-1: #333;
-$Grey-dark-2: #777;
-$Grey-dark-3: #999;
+$color-brown: #342c28;
+
+// Sizes
+$s-size: 1rem;
+$m-size: 2rem;
+$l-size: 3rem;
+$xl-size: 4rem;
