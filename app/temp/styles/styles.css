@@ -310,7 +310,8 @@ COLORS
 
 body {
   font-family: 'Barlow Condensed', sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  height: 2000px; }
 
 a {
   text-decoration: none;
@@ -319,16 +320,22 @@ a {
 
 .header {
   color: #fff;
-  padding: 2rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; }
+  width: 100%;
+  height: 0;
+  transition: .5s;
+  background-color: rgba(29, 29, 29, 0.85); }
   .header__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 2rem;
+    transition: .5s;
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem); }
   .header__logo h1 {
     margin: 0;
     font-size: 1.4rem;
@@ -357,6 +364,11 @@ a {
       margin-right: 2rem; }
     .header__nav-list-item a {
       text-transform: uppercase; }
+  .header--solid {
+    height: unset; }
+    .header--solid .header__inner {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
 
 .intro {
   height: 600px;
