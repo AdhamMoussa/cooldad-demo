@@ -49,6 +49,7 @@
       justify-content: space-between;
       align-items: center;
       &-item {
+        letter-spacing: 1px;
         &:not(:last-child) {
           margin-right: $m-size;
         }

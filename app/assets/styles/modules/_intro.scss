@@ -1,5 +1,60 @@
 .intro {
-  height: 600px;
+  padding: 10rem $m-size $l-size;
   background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/intro-bg.jpg');
   background-size: cover;
+  color: #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__main {
+    width: 55%;
+  }
+  &__title {
+    font-size: 1.85rem;
+    color: $color-primary;
+    text-transform: uppercase;
+    margin-bottom: $s-size;
+  }
+  &__text {
+    font-weight: 300;
+    width: 80%;
+    margin-bottom: $m-size;
+  }
+  &__image {
+    width: 30%;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__don {
+    width: 60%;
+    &-amount {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &-box {
+        width: 30%;
+        background-color: rgba($color-black-dark, .4);
+        text-align: center;
+        margin-bottom: $s-size;
+      }
+      &-btn {
+        display: none;
+        &:checked+label {
+          border: 2px solid $color-primary;
+          opacity: 1;
+        }
+      }
+      &-label {
+        display: block;
+        padding: .5rem 0;
+        border: 2px solid $color-primary;
+        font-weight: 700;
+        letter-spacing: 1px;
+        opacity: .5;
+        cursor: pointer;
+      }
+    }
+  }
 }
