@@ -1,5 +1,5 @@
 .intro {
-  padding: 10rem $m-size $l-size;
+  padding: 9rem $m-size $l-size;
   background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/intro-bg.jpg');
   background-size: cover;
   color: #fff;
@@ -54,6 +54,36 @@
         letter-spacing: 1px;
         opacity: .5;
         cursor: pointer;
+      }
+    }
+    &-btn {
+      position: relative;
+      margin-top: $m-size;
+      &-front {
+        display: block;
+        position: absolute;
+        width: 196px;
+        height: 46px;
+        top: 2px;
+        left: 2px;
+        clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+        border: none;
+        background-color: $color-black-dark;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          background-color: $color-black;
+        }
+      }
+      &-back {
+        width: 200px;
+        height: 50px;
+        background-color: $color-primary;
+        clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
       }
     }
   }
