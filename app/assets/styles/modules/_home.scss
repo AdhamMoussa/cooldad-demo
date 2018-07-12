@@ -27,11 +27,13 @@
 }
 
 
-.annonces {
+.annonces,
+.questions,
+.nouvelles {
   .section__list-item {
     margin-bottom: $m-size;
     &:last-child {
-      margin-bottom: $l-size;
+      margin-bottom: $m-size;
     }
   }
   .section__list-item-icon {
@@ -44,5 +46,17 @@
     p {
       color: $color-dark-gray;
     }
+  }
+}
+
+.questions {
+  .section__list-item-description {
+    p {
+      color: $color-light-gray;
+      font-weight: 400;
+    }
+  }
+  .section__description p {
+    color: $color-light-gray;
   }
 }

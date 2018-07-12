@@ -588,16 +588,33 @@ a {
   -webkit-transform: translateY(-5rem);
           transform: translateY(-5rem); }
 
-.annonces .section__list-item {
+.annonces .section__list-item,
+.questions .section__list-item,
+.nouvelles .section__list-item {
   margin-bottom: 2rem; }
-  .annonces .section__list-item:last-child {
-    margin-bottom: 3rem; }
+  .annonces .section__list-item:last-child,
+  .questions .section__list-item:last-child,
+  .nouvelles .section__list-item:last-child {
+    margin-bottom: 2rem; }
 
-.annonces .section__list-item-icon {
+.annonces .section__list-item-icon,
+.questions .section__list-item-icon,
+.nouvelles .section__list-item-icon {
   width: 10%; }
 
-.annonces .section__list-item-text {
+.annonces .section__list-item-text,
+.questions .section__list-item-text,
+.nouvelles .section__list-item-text {
   width: 90%; }
 
-.annonces .section__list-item-description p {
+.annonces .section__list-item-description p,
+.questions .section__list-item-description p,
+.nouvelles .section__list-item-description p {
   color: #6d6d6d; }
+
+.questions .section__list-item-description p {
+  color: #acacac;
+  font-weight: 400; }
+
+.questions .section__description p {
+  color: #acacac; }
