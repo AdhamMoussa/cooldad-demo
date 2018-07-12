@@ -4,6 +4,7 @@
     text-align: right;
     .section__list-item-icon {
       margin-left: $m-size;
+      margin-right: 0;
     }
   }
   &__middle {
@@ -24,6 +25,9 @@
     text-align: center;
     transform: translateY(-5rem);
   }
+  .section__list-item {
+    margin-bottom: 6rem;
+  }
 }
 
 
@@ -36,12 +40,6 @@
       margin-bottom: $m-size;
     }
   }
-  .section__list-item-icon {
-    width: 10%;
-  }
-  .section__list-item-text {
-    width: 90%;
-  }
   .section__list-item-description {
     p {
       color: $color-dark-gray;
@@ -53,7 +51,6 @@
   .section__list-item-description {
     p {
       color: $color-light-gray;
-      font-weight: 400;
     }
   }
   .section__description p {

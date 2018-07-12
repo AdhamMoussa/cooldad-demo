@@ -19,6 +19,7 @@
   }
   &__title {
     margin-bottom: $m-size;
+    font-family: 'Oswald', sans-serif;
     h2 {
       display: inline-block;
       font-size: $l-size;
@@ -44,7 +45,7 @@
   &__description {
     margin-bottom: $m-size;
       p {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
         color: $color-dark-gray;
       }
   }
@@ -54,27 +55,26 @@
     }
   }
   &__list {
+    margin-bottom: $xl-size;
     &-item {
       display: flex;
       align-items: center;
-      margin-bottom: $l-size;
+      &:not(:last-child) {
+        margin-bottom: $l-size;
+      }
     }
     &-item-icon {
-      width: 20%;
-    }
-    &-item-text {
-      width: 80%;
+      margin-right: $m-size;
     }
     &-item-title {
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-transform: uppercase;
-        letter-spacing: 1px;
       }
     }
     &-item-description {
       p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: darken($color-light-gray, 10%);
       }
     }
@@ -88,9 +88,9 @@
     a {
       position: relative;
       color: $color-primary;
-      font-size: 1.4rem;
-      font-weight: 600;
-      letter-spacing: 2px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1px;
       text-transform: uppercase;
       span {
         position: absolute;
