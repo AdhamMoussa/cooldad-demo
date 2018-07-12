@@ -19,7 +19,6 @@
   }
   &__text {
     font-size: 1.35rem;
-    font-weight: 300;
     letter-spacing: 1px;
     color: $color-light-gray;
     width: 80%;
@@ -36,13 +35,14 @@
     width: 60%;
     &-amount {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
       &-box {
-        width: 120px;
+        width: 125px;
         background-color: rgba($color-black-dark, .4);
         text-align: center;
         margin-bottom: $s-size;
+        margin-right: $s-size;
       }
       &-btn {
         display: none;
@@ -53,7 +53,7 @@
       }
       &-label {
         display: block;
-        padding: .6rem 0;
+        padding: .8rem 0;
         border: 2px solid $color-primary;
         font-size: 1.1rem;
         font-weight: 700;
