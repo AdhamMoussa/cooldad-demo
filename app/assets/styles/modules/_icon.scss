@@ -7,9 +7,15 @@
   transform: rotate(45deg);
   &>* {
     transform: rotate(-45deg);
+    color: #fff;
+    font-weight: 600;
   }
   &--large {
     width: 4rem;
     height: 4rem;
+  }
+  &--small {
+    width: 2rem;
+    height: 2rem;
   }
 }

@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
   }
+  &__head {
+    text-align: center;
+    margin-bottom: 9rem;
+  }
   &__main {
     width: 40%;
   }
@@ -30,6 +34,9 @@
         bottom: -15px; //$m-size - 1px
       }
     }
+    h2.centered::after {
+      left: 25%;
+    }
     span {
       color: $color-primary;
     }
@@ -41,12 +48,16 @@
         color: $color-dark-gray;
       }
   }
+  &__description--dark {
+    p {
+      color: $color-light-gray;
+    }
+  }
   &__list {
     &-item {
       display: flex;
-      &:not(:last-child) {
-        margin-bottom: $l-size;
-      }
+      align-items: center;
+      margin-bottom: $l-size;
     }
     &-item-icon {
       width: 20%;
@@ -67,13 +78,15 @@
         color: darken($color-light-gray, 10%);
       }
     }
+    &-item-description--dark {
+      p {
+        color: #fff;
+      }
+    }
   }
   &__link {
-    margin-top: $l-size;
-    display: inline-flex;
-    align-items: center;
-    position: relative;
     a {
+      position: relative;
       color: $color-primary;
       font-size: 1.4rem;
       font-weight: 600;

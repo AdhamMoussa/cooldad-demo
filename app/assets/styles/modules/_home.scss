@@ -1,0 +1,48 @@
+.services {
+  &__left-side {
+    width: 33%;
+    text-align: right;
+    .section__list-item-icon {
+      margin-left: $m-size;
+    }
+  }
+  &__middle {
+    width: 25%;
+    img {
+      display: block;
+      margin: 0 auto;
+      transform: translateY(-7rem);
+    }
+  }
+  &__right-side {
+    width: 33%;
+    .section__list-item-icon {
+      margin-right: $m-size;
+    }
+  }
+  .section__link {
+    text-align: center;
+    transform: translateY(-5rem);
+  }
+}
+
+
+.annonces {
+  .section__list-item {
+    margin-bottom: $m-size;
+    &:last-child {
+      margin-bottom: $l-size;
+    }
+  }
+  .section__list-item-icon {
+    width: 10%;
+  }
+  .section__list-item-text {
+    width: 90%;
+  }
+  .section__list-item-description {
+    p {
+      color: $color-dark-gray;
+    }
+  }
+}

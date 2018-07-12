@@ -8,6 +8,7 @@
   height: 0;
   transition: .5s;
   background-color: rgba($color-black-dark, .85);
+  z-index: 10000;
   &__inner {
     display: flex;
     justify-content: space-between;
