@@ -1,5 +1,5 @@
 .section {
-  padding: $section-padding 0 $xl-size;
+  padding: $section-padding 0 6rem;
   background-color: #fff;
   color: $color-black;
   &__row {
@@ -99,11 +99,12 @@
     }
   }
   &__image {
-    width: 45%;
+    width: 40%;
     margin-right: $xl-size;
     transform: translateY(-2rem);
     img {
       max-width: 100%;
+      display: block;
     }
   }
   &--dark {
