@@ -5,10 +5,10 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__head {
     text-align: center;
-    margin-bottom: 9rem;
   }
   &__main {
     width: 40%;

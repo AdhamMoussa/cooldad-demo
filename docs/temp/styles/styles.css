@@ -381,7 +381,7 @@ a {
               transform: translateY(0); }
 
 .intro {
-  padding: 11.5rem 2rem 4rem;
+  padding: 11rem 2rem 4rem;
   background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("../images/intro-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -454,7 +454,7 @@ a {
         font-size: 1.25rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         cursor: pointer;
         transition: .3s; }
         .intro__don-btn-front:hover {
@@ -471,15 +471,15 @@ a {
   margin: 0 auto; }
 
 .section {
-  padding: 11.5rem 0 4rem;
+  padding: 11rem 0 4rem;
   background-color: #fff;
   color: #333333; }
   .section__row {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .section__head {
-    text-align: center;
-    margin-bottom: 9rem; }
+    text-align: center; }
   .section__main {
     width: 40%; }
   .section__title {
@@ -592,9 +592,7 @@ a {
   width: 25%; }
   .services__middle img {
     display: block;
-    margin: 0 auto;
-    -webkit-transform: translateY(-7rem);
-            transform: translateY(-7rem); }
+    margin: 0 auto; }
 
 .services__right-side {
   width: 33%; }
@@ -603,11 +601,10 @@ a {
 
 .services .section__link {
   justify-content: center;
-  -webkit-transform: translateY(-5rem);
-          transform: translateY(-5rem); }
+  margin-top: 1rem; }
 
-.services .section__list-item {
-  margin-bottom: 6rem; }
+.services .section__list-item:not(:last-child) {
+  margin-bottom: 7rem; }
 
 .annonces .section__list-item,
 .questions .section__list-item,
@@ -637,8 +634,8 @@ a {
       align-items: center;
       justify-content: center;
       position: absolute;
-      width: 414px;
-      height: 64px;
+      width: 402px;
+      height: 59px;
       top: 3px;
       left: 3px;
       -webkit-clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
@@ -649,14 +646,14 @@ a {
       font-size: 1.25rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
       cursor: pointer;
       transition: .3s; }
       .footer__btn-front:hover {
         background-color: #333333; }
     .footer__btn-back {
-      width: 420px;
-      height: 70px;
+      width: 408px;
+      height: 65px;
       background-color: #ff6927;
       -webkit-clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
               clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%); }

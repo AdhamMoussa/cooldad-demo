@@ -12,7 +12,6 @@
     img {
       display: block;
       margin: 0 auto;
-      transform: translateY(-7rem);
     }
   }
   &__right-side {
@@ -23,10 +22,12 @@
   }
   .section__link {
     justify-content: center;
-    transform: translateY(-5rem);
+    margin-top: $s-size;
   }
   .section__list-item {
-    margin-bottom: 6rem;
+    &:not(:last-child) {
+      margin-bottom: 7rem;
+    }
   }
 }
 
