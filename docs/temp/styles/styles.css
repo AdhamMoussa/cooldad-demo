@@ -374,6 +374,8 @@ a {
       letter-spacing: 1px; }
       .header__nav-list-item a:hover {
         color: #fff; }
+    .header__nav-list-item--active a {
+      color: #fff; }
   .header--solid {
     height: unset; }
     .header--solid .header__inner {
