@@ -2,10 +2,6 @@
   padding: $section-padding 0 $xl-size;
   background-color: #fff;
   color: $color-black;
-  &--dark {
-    background-color: $color-brown;
-    color: #fff;
-  }
   &__row {
     display: flex;
     justify-content: space-between;
@@ -22,8 +18,9 @@
     font-family: 'Oswald', sans-serif;
     h2 {
       display: inline-block;
-      font-size: $l-size;
+      font-size: 2.625rem;
       text-transform: uppercase;
+      color: $color-black;
       position: relative;
       &::after {
         content: "";
@@ -43,16 +40,11 @@
     }
   }
   &__description {
-    margin-bottom: $m-size;
+    margin-bottom: $l-size;
       p {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         color: $color-dark-gray;
       }
-  }
-  &__description--dark {
-    p {
-      color: $color-light-gray;
-    }
   }
   &__list {
     margin-bottom: $xl-size;
@@ -68,39 +60,41 @@
     }
     &-item-title {
       h3 {
-        font-size: 1.3rem;
+        font-size: 1.125rem;
         text-transform: uppercase;
+        color: $color-dark-gray;
       }
     }
     &-item-description {
       p {
-        font-size: 1.1rem;
-        color: darken($color-light-gray, 10%);
+        font-size: .9375rem;
+        color: $color-gray;
       }
     }
-    &-item-description--dark {
-      p {
-        color: #fff;
+    &-item--small {
+      .section__list-item-title h3 {
+        font-weight: 400;
+        text-transform: none;
+      }
+      .section__list-item-icon {
+        margin-right: $s-size;
       }
     }
   }
   &__link {
+    display: flex;
+    align-items: center;
     a {
-      position: relative;
       color: $color-primary;
       font-size: 1.25rem;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
       span {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(110%, -60%);
         transition: .3s;
       }
       &:hover > span {
-        transform: translate(140%, -60%);
+        margin-left: 10px;
       }
     }
   }
@@ -110,6 +104,30 @@
     transform: translateY(-2rem);
     img {
       max-width: 100%;
+    }
+  }
+  &--dark {
+    background-color: $color-brown;
+    color: #fff;
+    .section__title {
+      h2 {
+        color: #fff;
+      }
+    }
+    .section__description {
+      p {
+        color: #fff;
+      }
+    }
+    .section__list-item-title {
+      h3 {
+        color: #fff;
+      }
+    }
+    .section__list-item-description {
+      p {
+        color: #fff;
+      }
     }
   }
 }

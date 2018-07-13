@@ -22,7 +22,7 @@
     }
   }
   .section__link {
-    text-align: center;
+    justify-content: center;
     transform: translateY(-5rem);
   }
   .section__list-item {
@@ -39,21 +39,5 @@
     &:last-child {
       margin-bottom: $m-size;
     }
-  }
-  .section__list-item-description {
-    p {
-      color: $color-dark-gray;
-    }
-  }
-}
-
-.questions {
-  .section__list-item-description {
-    p {
-      color: $color-light-gray;
-    }
-  }
-  .section__description p {
-    color: $color-light-gray;
   }
 }

@@ -21,8 +21,8 @@
   <header class="header header--solid">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="#">
-          <h1>Cool Dad</h1>
+        <a href="#intro">
+          <img src="temp/images/logo.png" alt="logo">
         </a>
       </div>
       <div class="header__stats">
@@ -40,19 +40,19 @@
       <div class="header__nav">
         <nav class="header__nav-list">
           <div class="header__nav-list-item">
-            <a href="#">Activités</a>
+            <a href="#activities">Activités</a>
           </div>
           <div class="header__nav-list-item">
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </div>
           <div class="header__nav-list-item">
-            <a href="#">Annonces</a>
+            <a href="#annonces">Annonces</a>
           </div>
           <div class="header__nav-list-item">
-            <a href="#">Questions</a>
+            <a href="#questions">Questions</a>
           </div>
           <div class="header__nav-list-item">
-            <a href="#">Nouvelles</a>
+            <a href="#nouvelles">Nouvelles</a>
           </div>
         </nav>
       </div>
@@ -60,7 +60,7 @@
   </header>
   <!-- /HEADER END -->
   <!-- INTRO START -->
-  <section class="intro">
+  <section class="intro" id="intro">
     <div class="intro__inner">
       <div class="intro__main">
         <h2 class="intro__title">Aidez-Nous à creér la meilleure App
@@ -111,7 +111,7 @@
   </section>
   <!-- /INTRO END -->
   <!-- ACTIVITIES START -->
-  <section class="section activities">
+  <section class="section activities" id="activities">
     <div class="wrapper">
       <div class="section__row">
         <div class="section__main">
@@ -173,7 +173,9 @@
           </div>
           <div class="section__link">
             <a href="#">DONNE-NOUS TON AVIS LÀ-DESSUS
-              <span>&rarr;</span>
+              <span>
+                <img src="temp/images/arrow.svg" alt="arrow">
+              </span>
             </a>
           </div>
         </div>
@@ -185,7 +187,7 @@
   </section>
   <!-- /ACTIVITIES END -->
   <!-- SERVICES START -->
-  <div class="section section--dark services">
+  <section class="section section--dark services" id="services">
     <div class="wrapper">
       <div class="section__head">
         <div class="section__title">
@@ -193,7 +195,7 @@
             <span>Services</span>
           </h2>
         </div>
-        <div class="section__description section__description--dark">
+        <div class="section__description">
           <p>Besoin d’un Cool Dad pour t’aider dans tes rénovations ?
             <br>Ou besoin simplement d’un outil ?</p>
         </div>
@@ -206,7 +208,7 @@
                 <div class="section__list-item-title">
                   <h3>TRAVAUX INTÉRIEURS</h3>
                 </div>
-                <div class="section__list-item-description section__list-item-description--dark">
+                <div class="section__list-item-description">
                   <p>Rénovation intérieur, électricité, plancher, plomberie, pose de gypse, etc.</p>
                 </div>
               </div>
@@ -221,7 +223,7 @@
                 <div class="section__list-item-title">
                   <h3>TRAVAUX EXTÉRIEURS</h3>
                 </div>
-                <div class="section__list-item-description section__list-item-description--dark">
+                <div class="section__list-item-description">
                   <p>Balcon, terrasse, gazebo, cabanon, pavage, piscine, spa, clôture, etc.</p>
                 </div>
               </div>
@@ -236,7 +238,7 @@
                 <div class="section__list-item-title">
                   <h3>AUTOMOBILE</h3>
                 </div>
-                <div class="section__list-item-description section__list-item-description--dark">
+                <div class="section__list-item-description">
                   <p>Mécanique, carrosserie, changement d’huile, pneus, système audio, etc.</p>
                 </div>
               </div>
@@ -263,7 +265,7 @@
                 <div class="section__list-item-title">
                   <h3>MULTIMÉDIA</h3>
                 </div>
-                <div class="section__list-item-description section__list-item-description--dark">
+                <div class="section__list-item-description">
                   <p>Application mobile, site web, graphisme, réseautique, système audio, TV, etc.</p>
                 </div>
               </div>
@@ -278,7 +280,7 @@
                 <div class="section__list-item-title">
                   <h3>SERVICES GÉNÉRAUX</h3>
                 </div>
-                <div class="section__list-item-description section__list-item-description--dark">
+                <div class="section__list-item-description">
                   <p>Entraîneur, déménagement, thérapeutes, droits, besoin d’un outil, etc.</p>
                 </div>
               </div>
@@ -293,7 +295,7 @@
                 <div class="section__list-item-title">
                   <h3>BESOIN D'UN OUTIL ?</h3>
                 </div>
-                <div class="section__list-item-description section__list-item-description--dark">
+                <div class="section__list-item-description">
                   <p>Si tu lui fais attention, un Cool Dad se fera plaisir de t'en prêter un!</p>
                 </div>
               </div>
@@ -301,16 +303,18 @@
           </div>
         </div>
       </div>
-      <div class="section__link section__link--services">
+      <div class="section__link">
         <a href="#">DONNE-NOUS TON AVIS LÀ-DESSUS
-          <span>&rarr;</span>
+          <span>
+            <img src="temp/images/arrow.svg" alt="arrow">
+          </span>
         </a>
       </div>
     </div>
-  </div>
+  </section>
   <!-- /SERVICES END -->
   <!-- ANNONCES START -->
-  <section class="section annonces">
+  <section class="section annonces" id="annonces">
     <div class="wrapper">
       <div class="section__row">
         <div class="section__main">
@@ -323,46 +327,48 @@
             <p>Tu as des accessoires ou vêtements pour bébé que tu ne te sers plus ?</p>
           </div>
           <div class="section__list">
-            <div class="section__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>1</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Publie ton annonce sans frais</p>
+                <div class="section__list-item-title">
+                  <h3>Publie ton annonce sans frais</h3>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>2</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Cherche ce que tu as besoin à travers la ligue</p>
+                <div class="section__list-item-title">
+                  <h3>Cherche ce que tu as besoin à travers la ligue</h3>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>3</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Accessoires pour bébé, équipements de sports, vêtements et bien plus!</p>
+                <div class="section__list-item-title">
+                  <h3>Accessoires pour bébé, équipements de sports, vêtements et bien plus!</h3>
                 </div>
               </div>
             </div>
           </div>
           <div class="section__link">
             <a href="#">DONNE-NOUS TON AVIS LÀ-DESSUS
-              <span>&rarr;</span>
+              <span>
+                <img src="temp/images/arrow.svg" alt="arrow">
+              </span>
             </a>
           </div>
         </div>
@@ -374,7 +380,7 @@
   </section>
   <!-- /ANNONCES END -->
   <!-- QUESTIONS START -->
-  <section class="section section--dark questions">
+  <section class="section section--dark questions" id="questions">
     <div class="wrapper">
       <div class="section__row">
         <div class="section__image">
@@ -390,58 +396,60 @@
             <p>Tu as un problème ou tu te poses une questions qui nécessiterait l’expertise d’un Cool Dad ?</p>
           </div>
           <div class="section__list">
-            <div class="section__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>1</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Pose une question en finance, rénovation, mécanique, etc.</p>
+                <div class="section__list-item-title">
+                  <h3>Pose une question en finance, rénovation, mécanique, etc.</h3>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>2</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Reçoit seulement les questions qui te concernent et qui cible ton champ d’expertise.</p>
+                <div class="section__list-item-title">
+                  <h3>Reçoit seulement les questions qui te concernent et qui cible ton champ d’expertise.</h3>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>3</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Consulte les questions et réponses les plus populaires.</p>
+                <div class="section__list-item-title">
+                  <h3>Consulte les questions et réponses les plus populaires.</h3>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>4</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
-                  <p>Met dans tes favoris les questions que tu ne veux pas perdre la trace.</p>
+                <div class="section__list-item-title">
+                  <h3>Met dans tes favoris les questions que tu ne veux pas perdre la trace.</h3>
                 </div>
               </div>
             </div>
           </div>
           <div class="section__link">
             <a href="#">DONNE-NOUS TON AVIS LÀ-DESSUS
-              <span>&rarr;</span>
+              <span>
+                <img src="temp/images/arrow.svg" alt="arrow">
+              </span>
             </a>
           </div>
         </div>
@@ -450,7 +458,7 @@
   </section>
   <!-- /QUESTIONS END -->
   <!-- NOUVELLES START -->
-  <section class="section nouvelles">
+  <section class="section nouvelles" id="nouvelles">
     <div class="wrapper">
       <div class="section__row">
         <div class="section__main">
@@ -463,50 +471,50 @@
             <p>Soit informé des concours, nouvelles et faits saillants de la Ligue</p>
           </div>
           <div class="section__list">
-            <div class="section__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>1</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
+                <div class="section__list-item-title">
                   <p>Derniers articles parus sur cooldad.ca</p>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>2</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
+                <div class="section__list-item-title">
                   <p>Concours exclusifs aux membres de la Ligue.</p>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>3</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
+                <div class="section__list-item-title">
                   <p>Événements à ne pas manquer près de chez toi.</p>
                 </div>
               </div>
             </div>
-            <div class="section__list-item activities__list-item">
+            <div class="section__list-item section__list-item--small">
               <div class="section__list-item-icon">
                 <div class="icon icon--small">
                   <span>4</span>
                 </div>
               </div>
               <div class="section__list-item-text">
-                <div class="section__list-item-description">
+                <div class="section__list-item-title">
                   <p>Top 10 des photos les plus aimés du mois dans la Ligue.</p>
                 </div>
               </div>
@@ -514,7 +522,9 @@
           </div>
           <div class="section__link">
             <a href="#">DONNE-NOUS TON AVIS LÀ-DESSUS
-              <span>&rarr;</span>
+              <span>
+                <img src="temp/images/arrow.svg" alt="arrow">
+              </span>
             </a>
           </div>
         </div>

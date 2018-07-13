@@ -1,13 +1,14 @@
 /*
 COLORS
 */
-$color-primary: #ff752c;
+$color-primary: #ff6927;
 $color-primary-dark: #713f26;
 
-$color-black: #3a3a3a;
-$color-black-dark: #1d1d1d;
-$color-light-gray: #acacac;
-$color-dark-gray: #6d6d6d;
+$color-black-dark: #181818;
+$color-black: #333333;
+$color-dark-gray: #303030;
+$color-gray: #5d5d5d;
+$color-light-gray: #c6c6c6;
 
 $color-brown: #342c28;
 
@@ -17,3 +18,9 @@ $m-size: 2rem;
 $l-size: 3rem;
 $xl-size: 4rem;
 $section-padding: 11.5rem;
+
+//$a1: #c6c6c6; //intro text 198 198 198
+//$a2: #303030; //section subtitle & list item title 48 48 48
+//$a3: #5d5d5d; //list item description 93 93 93
+//$a4: #ff6927; //Primary
+//$a5: #333333; //section title 51 51 51

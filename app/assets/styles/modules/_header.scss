@@ -16,15 +16,8 @@
     padding: $m-size;
     transition: .5s;
     transform: translateY(.5rem);
-  }
-  &__logo {
-    h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      font-weight: 300;
-      font-family: sans-serif;
-      text-transform: uppercase;
-    }
+    max-width: 1800px;
+    margin: 0 auto;
   }
   &__stats {
     display: flex;
@@ -32,12 +25,13 @@
     align-items: center;
     margin-right: auto;
     margin-left: $xl-size;
-    font-size: .8rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     &-num {
+      font-size: .9375rem;
       font-weight: 700;
     }
     &-text {
+      font-size: .75rem;
       font-weight: 300;
       span {
         font-weight: 700;
@@ -57,10 +51,14 @@
           margin-right: $m-size;
         }
         a {
+          color: #c0c0c0;
           text-transform: uppercase;
-          font-size: .95rem;
+          font-size: .875rem;
           font-weight: 600;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }
