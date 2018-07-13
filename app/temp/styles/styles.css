@@ -378,7 +378,8 @@ a {
     height: unset; }
     .header--solid .header__inner {
       -webkit-transform: translateY(0);
-              transform: translateY(0); }
+              transform: translateY(0);
+      padding: 1rem 2rem; }
 
 .intro {
   padding: 12.5rem 2rem 4rem;

@@ -67,6 +67,7 @@
     height: unset;
     .header__inner {
       transform: translateY(0);
+      padding: $s-size $m-size;
     }
   }
 }

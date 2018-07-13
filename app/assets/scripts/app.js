@@ -1,9 +1,6 @@
+import Header from './modules/Header';
 
-
-
-
-
-
+const header = new Header();
 
 
 
