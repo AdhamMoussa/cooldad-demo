@@ -58,7 +58,7 @@
     z-index: 100000;////////////
     padding-top: 5rem;///////////
     transform: translateX(100%);//////////////
-    transition: 1s;
+    transition: .5s;
     @include largeUp {
       flex-direction: row;
       justify-content: space-between;
@@ -135,6 +135,9 @@
       .second {
         transform: rotate(-45deg);
       }
+    }
+    &--visible {
+      transform: translateX(0);
     }
   }
   &__menu-icon {

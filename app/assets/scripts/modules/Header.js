@@ -8,8 +8,12 @@ export default class Header {
     this.header = $('#header');
     this.sections = $('.section');
     this.navElements = $('.header__nav-list-item');
+    this.navbar = $('.header__nav');
+    this.menuIcon = $('#menu-icon');
+    this.menuCloseIcon = $('#close-icon');
     this.scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});
     this.triggerHeader();
+    this.menuToggle();
   }
   triggerHeader() {
     const that = this;
@@ -34,4 +38,13 @@ export default class Header {
       });
     });
   };
+  menuToggle() {
+    const that = this;
+    this.menuIcon.click(function () {
+      that.navbar.addClass('header__nav--visible');
+    });
+    this.menuCloseIcon.click(function () {
+      that.navbar.removeClass('header__nav--visible');
+    });
+  }
 }

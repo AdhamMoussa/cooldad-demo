@@ -382,7 +382,7 @@ a {
     padding-top: 5rem;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    transition: 1s; }
+    transition: .5s; }
     @media only screen and (min-width: 992px) {
       .header__nav {
         flex-direction: row;
@@ -450,6 +450,9 @@ a {
       .header__nav-close .second {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg); }
+    .header__nav--visible {
+      -webkit-transform: translateX(0);
+              transform: translateX(0); }
   .header__menu-icon {
     width: 35px;
     height: 18px;
