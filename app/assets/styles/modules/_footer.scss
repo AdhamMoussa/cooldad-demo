@@ -1,8 +1,10 @@
 .footer {
-  padding: $xl-size $s-size 0;
   background-color: $color-black-dark;
   color: #fff;
   text-align: center;
+  &__main {
+    padding: $xl-size $s-size 0;
+  }
   &__text {
     p {
       font-size: 1.15rem;

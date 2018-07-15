@@ -842,10 +842,11 @@ a {
     margin-bottom: 2rem; }
 
 .footer {
-  padding: 4rem 1rem 0;
   background-color: #181818;
   color: #fff;
   text-align: center; }
+  .footer__main {
+    padding: 4rem 1rem 0; }
   .footer__text p {
     font-size: 1.15rem;
     font-weight: 700;
