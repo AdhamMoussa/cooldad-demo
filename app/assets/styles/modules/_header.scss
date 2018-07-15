@@ -52,6 +52,7 @@
     position: absolute;///////
     top: 0;///////////
     right: 0;/////////
+    bottom: 0;//////////////
     background-color: rgba($color-black-dark, .95);//////////////////
     min-height: 100vh;///////////
     width: 60vw;//////////////
@@ -59,12 +60,14 @@
     padding-top: 5rem;///////////
     transform: translateX(100%);//////////////
     transition: .5s;
+    overflow-y: scroll;
     @include largeUp {
       flex-direction: row;
       justify-content: space-between;
       position: unset;
       top: unset;
       right: unset;
+      bottom: unset;
       background-color: transparent;
       min-height: unset;
       width: unset;
@@ -80,11 +83,13 @@
         flex-direction: row;
       }
       &-item {
+        margin-bottom: $l-size;
+        @include largeUp {
+          margin-bottom: 0;
+        }
         &:not(:last-child) {
-          margin-bottom: $l-size;
           @include largeUp {
             margin-right: 1.5rem;
-            margin-bottom: 0;
           }
           @include xLargeUp {
             margin-right: $m-size;

@@ -375,6 +375,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     background-color: rgba(24, 24, 24, 0.95);
     min-height: 100vh;
     width: 60vw;
@@ -382,7 +383,8 @@ a {
     padding-top: 5rem;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    transition: .5s; }
+    transition: .5s;
+    overflow-y: scroll; }
     @media only screen and (min-width: 992px) {
       .header__nav {
         flex-direction: row;
@@ -390,6 +392,7 @@ a {
         position: unset;
         top: unset;
         right: unset;
+        bottom: unset;
         background-color: transparent;
         min-height: unset;
         width: unset;
@@ -404,30 +407,32 @@ a {
       @media only screen and (min-width: 992px) {
         .header__nav-list {
           flex-direction: row; } }
-      .header__nav-list-item:not(:last-child) {
+      .header__nav-list-item {
         margin-bottom: 3rem; }
         @media only screen and (min-width: 992px) {
-          .header__nav-list-item:not(:last-child) {
-            margin-right: 1.5rem;
+          .header__nav-list-item {
             margin-bottom: 0; } }
+        @media only screen and (min-width: 992px) {
+          .header__nav-list-item:not(:last-child) {
+            margin-right: 1.5rem; } }
         @media only screen and (min-width: 1200px) {
           .header__nav-list-item:not(:last-child) {
             margin-right: 2rem;
             margin-bottom: 0; } }
-      .header__nav-list-item a {
-        color: #c0c0c0;
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        font-weight: 700;
-        letter-spacing: 1px; }
-        @media only screen and (min-width: 992px) {
-          .header__nav-list-item a {
-            font-size: .875rem;
-            font-weight: 600; } }
-        .header__nav-list-item a:hover {
+        .header__nav-list-item a {
+          color: #c0c0c0;
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          font-weight: 700;
+          letter-spacing: 1px; }
+          @media only screen and (min-width: 992px) {
+            .header__nav-list-item a {
+              font-size: .875rem;
+              font-weight: 600; } }
+          .header__nav-list-item a:hover {
+            color: #fff; }
+        .header__nav-list-item--active a {
           color: #fff; }
-      .header__nav-list-item--active a {
-        color: #fff; }
     .header__nav-close {
       position: absolute;
       top: 55px;
