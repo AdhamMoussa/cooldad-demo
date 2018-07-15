@@ -1,4 +1,13 @@
 .wrapper {
   width: 85%;
   margin: 0 auto;
+  @include mediumUp {
+    width: 80%;
+  }
+  @include largeUp {
+    width: 90%;
+  }
+  @include xLargeUp {
+    width: 85%;
+  }
 }

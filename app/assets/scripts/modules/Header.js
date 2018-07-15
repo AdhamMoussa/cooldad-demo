@@ -29,8 +29,6 @@ export default class Header {
       that.sections.each(function () {
         if (that.window.scrollTop() > $(this).offset().top - 300) {
           const target = '#'+$(this).attr('id');
-          console.log($('[href="'+target+'"]'));
-          
           $('[href="'+target+'"]').parent().addClass('header__nav-list-item--active').siblings().removeClass('header__nav-list-item--active');
         }
       });

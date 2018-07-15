@@ -1,14 +1,20 @@
 .footer {
-  padding-top: $xl-size;
+  padding: $xl-size $s-size 0;
   background-color: $color-black-dark;
   color: #fff;
   text-align: center;
   &__text {
     p {
-      font-size: 2rem;
+      font-size: 1.15rem;
       font-weight: 700;
       font-family: 'Oswald', sans-serif;
       letter-spacing: 1px;
+      @include smallUp {
+        font-size: 1.5rem;
+      }
+      @include mediumUp {
+        font-size: 2rem;
+      }
     }
   }
   &__btn {
@@ -20,36 +26,51 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      width: 402px;
-      height: 59px;
+      width: 252px;
+      height: 54px;
       top: 3px;
       left: 3px;
       clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
       border: none;
       background-color: $color-black-dark;
       color: #fff;
-      font-size: 1.25rem;
+      font-size: .9rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
       cursor: pointer;
       transition: .3s;
+      @include smallUp {
+        width: 402px;
+        height: 59px;
+        font-size: 1.25rem;
+      }
       &:hover {
         background-color: $color-black;
       }
     }
     &-back {
-      width: 408px;
-      height: 65px;
+      width: 258px;
+      height: 60px;
       background-color: $color-primary;
       clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+      @include smallUp {
+        width: 408px;
+        height: 65px;
+      }
     }
   }
   &__copyright {
+    font-size: .8rem;
     padding: $s-size;
     margin-top: $m-size;
     background-color: #111;
-    font-size: 1.1rem;
+    @include smallUp {
+      font-size: 1rem;
+    }
+    @include mediumUp {
+      font-size: 1.1rem;
+    }
     span {
       font-weight: 600;
     }

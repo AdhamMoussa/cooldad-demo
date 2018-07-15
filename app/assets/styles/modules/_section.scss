@@ -1,27 +1,47 @@
 .section {
-  padding: $section-padding 0 6rem;
+  padding: 5rem 0;
   background-color: #fff;
   color: $color-black;
+  @include mediumUp {
+    padding: $section-padding 0 6rem;
+  }
   &__row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    @include mediumUp {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   &__head {
     text-align: center;
+    margin-bottom: $xl-size;
+    @include largeUp {
+      margin-bottom: 0;
+    }
   }
   &__main {
-    width: 40%;
+    @include largeUp {
+      width: 45%;
+    }
+    @include x2LargeUp {
+      width: 40%;
+    }
   }
   &__title {
     margin-bottom: $m-size;
     font-family: 'Oswald', sans-serif;
     h2 {
       display: inline-block;
-      font-size: 2.625rem;
+      font-size: 1.8rem;
       text-transform: uppercase;
       color: $color-black;
       position: relative;
+      @include smallUp {
+        font-size: 2.625rem;
+      }
       &::after {
         content: "";
         width: 50%;
@@ -60,15 +80,21 @@
     }
     &-item-title {
       h3 {
-        font-size: 1.125rem;
+        font-size: 1rem;
         text-transform: uppercase;
         color: $color-dark-gray;
+        @include smallUp {
+          font-size: 1.125rem;
+        }
       }
     }
     &-item-description {
       p {
-        font-size: .9375rem;
+        font-size: .8rem;
         color: $color-gray;
+        @include smallUp {
+          font-size: .9375rem;
+        }
       }
     }
     &-item--small {
@@ -86,10 +112,13 @@
     align-items: center;
     a {
       color: $color-primary;
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
+      @include smallUp {
+        font-size: 1.25rem;
+      }
       span {
         transition: .3s;
       }
@@ -99,9 +128,12 @@
     }
   }
   &__image {
+    display: none;
     width: 40%;
-    margin-right: $xl-size;
     transform: translateY(-2rem);
+    @include largeUp {
+      display: block;
+    }
     img {
       max-width: 100%;
       display: block;

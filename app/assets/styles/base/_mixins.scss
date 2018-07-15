@@ -1,3 +1,8 @@
+@mixin xSmallUp {
+    @media only screen and (min-width:420px) {
+        @content;
+    }
+}
 @mixin smallUp {
     @media only screen and (min-width:576px) {
         @content;
@@ -15,6 +20,11 @@
 }
 @mixin xLargeUp {
     @media only screen and (min-width:1200px) {
+        @content;
+    }
+}
+@mixin x2LargeUp {
+    @media only screen and (min-width:1500px) {
         @content;
     }
 }
