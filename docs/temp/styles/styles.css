@@ -380,7 +380,7 @@ a {
     min-height: 100vh;
     width: 60vw;
     z-index: 100000;
-    padding-top: 5rem;
+    padding-top: 8rem;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     transition: .5s;
@@ -459,8 +459,6 @@ a {
       -webkit-transform: translateX(0);
               transform: translateX(0); }
   .header__menu-icon {
-    width: 35px;
-    height: 18px;
     display: flex;
     align-items: center;
     margin-right: 1rem;
@@ -468,6 +466,15 @@ a {
     @media only screen and (min-width: 992px) {
       .header__menu-icon {
         display: none; } }
+    .header__menu-icon button {
+      width: 35px;
+      height: 18px;
+      border: none;
+      background-color: transparent; }
+      .header__menu-icon button:focus {
+        outline: none; }
+      .header__menu-icon button:active {
+        outline: none; }
     .header__menu-icon div {
       position: relative;
       width: 35px;

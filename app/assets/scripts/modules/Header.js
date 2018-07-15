@@ -19,7 +19,7 @@ export default class Header {
     const that = this;
     this.window.scroll(function () {
       // solid header on scroll
-      if (that.window.scrollTop() > 150) {
+      if (that.window.scrollTop() > 100) {
         that.header.addClass('header--solid');
       } else {
         that.header.removeClass('header--solid');
