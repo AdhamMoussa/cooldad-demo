@@ -809,6 +809,20 @@ a {
     width: 1.944rem;
     height: 1.944rem; }
 
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #181818;
+  z-index: 200000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .loading-page div img {
+    max-width: 250px; }
+
 .services__left-side {
   margin-right: 2rem; }
   @media only screen and (min-width: 992px) {

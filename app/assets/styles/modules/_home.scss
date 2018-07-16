@@ -1,3 +1,19 @@
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $color-black-dark;
+  z-index: 200000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div img {
+    max-width: 250px;
+  }
+}
+
 .services {
   &__left-side {
     margin-right: $m-size;

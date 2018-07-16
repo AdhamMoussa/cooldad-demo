@@ -16,3 +16,5 @@ const header = new Header();
 // Vendors
 // import 'lazysizes';
 // import 'picturefill';
+
+$('#loading').fadeOut();
