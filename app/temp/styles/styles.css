@@ -384,7 +384,7 @@ a {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     transition: .5s;
-    overflow-y: scroll; }
+    overflow-y: auto; }
     @media only screen and (min-width: 992px) {
       .header__nav {
         flex-direction: row;
@@ -505,7 +505,7 @@ a {
 
 .intro {
   padding: 10rem 1rem 4rem;
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("../images/intro-bg.jpg");
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("../images/intro-bg-768.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -515,11 +515,16 @@ a {
     .intro {
       padding: 10rem 4rem 4rem;
       text-align: left; } }
+  @media only screen and (min-width: 768px) {
+    .intro {
+      background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("../images/intro-bg-992.jpg"); } }
   @media only screen and (min-width: 992px) {
     .intro {
+      background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("../images/intro-bg-1200.jpg");
       padding: 10.5rem 2rem 4rem; } }
   @media only screen and (min-width: 1500px) {
     .intro {
+      background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("../images/intro-bg.jpg");
       padding: 12.5rem 2rem 4rem; } }
   .intro__inner {
     display: flex;
