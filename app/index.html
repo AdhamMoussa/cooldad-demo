@@ -89,35 +89,38 @@
         <div class="intro__don">
           <div class="intro__don-amount">
             <div class="intro__don-amount-box">
-              <input class="intro__don-amount-btn" type="radio" name="don-amount" id="don-5">
-              <label class="intro__don-amount-label" for="don-5">5$</label>
+              <input class="intro__don-amount-btn" type="radio" value="5" name="don-amount" id="don-5">
+              <label class="intro__don-amount-label fixed-don" for="don-5">5$</label>
             </div>
             <div class="intro__don-amount-box">
-              <input class="intro__don-amount-btn" type="radio" name="don-amount" id="don-10" checked>
-              <label class="intro__don-amount-label" for="don-10">10$</label>
+              <input class="intro__don-amount-btn" type="radio" value="10" name="don-amount" id="don-10" checked>
+              <label class="intro__don-amount-label fixed-don" for="don-10">10$</label>
             </div>
             <div class="intro__don-amount-box">
-              <input class="intro__don-amount-btn" type="radio" name="don-amount" id="don-15">
-              <label class="intro__don-amount-label" for="don-15">15$</label>
+              <input class="intro__don-amount-btn" type="radio" value="15" name="don-amount" id="don-15">
+              <label class="intro__don-amount-label fixed-don" for="don-15">15$</label>
             </div>
           </div>
           <div class="intro__don-amount">
             <div class="intro__don-amount-box">
-              <input class="intro__don-amount-btn" type="radio" name="don-amount" id="don-25">
-              <label class="intro__don-amount-label" for="don-25">25$</label>
+              <input class="intro__don-amount-btn" type="radio" value="25" name="don-amount" id="don-25">
+              <label class="intro__don-amount-label fixed-don" for="don-25">25$</label>
             </div>
             <div class="intro__don-amount-box">
-              <input class="intro__don-amount-btn" type="radio" name="don-amount" id="don-50">
-              <label class="intro__don-amount-label" for="don-50">50$</label>
+              <input class="intro__don-amount-btn" type="radio" value="50" name="don-amount" id="don-50">
+              <label class="intro__don-amount-label fixed-don" for="don-50">50$</label>
             </div>
             <div class="intro__don-amount-box">
               <input class="intro__don-amount-btn" type="radio" name="don-amount" id="don-other">
-              <label class="intro__don-amount-label" for="don-other">Autre</label>
+              <label class="intro__don-amount-label" for="don-other" id="other-don">
+                Autre
+              </label>
             </div>
           </div>
+          <span class="intro__don-error" id="don-submit-error">S'il vous plaît entrer un montant valide !!</span>
           <div class="intro__don-btn">
             <div class="intro__don-btn-back">
-              <button class="intro__don-btn-front">Faire Un Don</button>
+              <button class="intro__don-btn-front" id="don-submit-btn">Faire Un Don</button>
             </div>
           </div>
         </div>

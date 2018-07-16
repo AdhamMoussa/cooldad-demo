@@ -1,4 +1,5 @@
 import Header from './modules/Header';
+import Don from './modules/Don';
 import $ from 'jquery';
 
 // load section images only if window width > 992px
@@ -16,7 +17,7 @@ $(window).resize(function () {
 });
 
 const header = new Header();
-
+const don = new Don();
 
 
 // Vendors
