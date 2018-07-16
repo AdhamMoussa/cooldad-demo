@@ -7,7 +7,13 @@ if ($(window).width() > 992) {
     $(this).attr('src', $(this).attr('data-src'));
   });
 }
-
+$(window).resize(function () {
+  if ($(window).width() > 992) {
+    $('.desktop-img').each(function () {
+      $(this).attr('src', $(this).attr('data-src'));
+    });
+  }
+});
 
 const header = new Header();
 
