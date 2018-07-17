@@ -1,6 +1,8 @@
 import Header from './modules/Header';
 import Don from './modules/Don';
+import Animations from './modules/Animations';
 import $ from 'jquery';
+import AOS from 'aos';
 
 // load section images only if window width > 992px
 if ($(window).width() > 992) {
@@ -18,6 +20,10 @@ $(window).resize(function () {
 
 const header = new Header();
 const don = new Don();
+const animations = new Animations();
+
+// initialize element animations on scroll
+AOS.init();
 
 
 // Vendors
