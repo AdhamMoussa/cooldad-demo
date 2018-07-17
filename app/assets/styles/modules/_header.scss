@@ -13,9 +13,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $m-size;
+    padding: $l-size;
     transition: .5s;
-    transform: translateY(.5rem);
     max-width: 1800px;
     margin: 0 auto;
   }
@@ -193,7 +192,6 @@
   &--solid {
     height: unset;
     .header__inner {
-      transform: translateY(0);
       padding: $m-size;
     }
   }
