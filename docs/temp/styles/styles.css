@@ -4178,3 +4178,73 @@ a {
         font-size: 1.1rem; } }
     .footer__copyright span {
       font-weight: 600; }
+
+.payment-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(24, 24, 24, 0.95);
+  z-index: 50000; }
+  .payment-modal__row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .payment-modal__title {
+    margin-bottom: 3rem; }
+    .payment-modal__title h2 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 2.3125rem; }
+      .payment-modal__title h2 span {
+        color: #ff6927; }
+  .payment-modal__btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .payment-modal__btns button {
+      width: 180px;
+      height: 60px;
+      border: 1px solid #fff;
+      background-color: #181818;
+      color: #fff;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.4s; }
+      .payment-modal__btns button img {
+        max-width: 40px; }
+      .payment-modal__btns button span {
+        margin-left: 0.5rem;
+        font-weight: 600; }
+      .payment-modal__btns button:hover {
+        border-color: #ff6927; }
+  .payment-modal__close {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 55px;
+    right: 80px;
+    cursor: pointer; }
+    .payment-modal__close .first,
+    .payment-modal__close .second {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 2px;
+      background-color: #fff; }
+    .payment-modal__close .first {
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+              transform: translate(-50%, -50%) rotate(45deg); }
+    .payment-modal__close .second {
+      -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+              transform: translate(-50%, -50%) rotate(-45deg); }
